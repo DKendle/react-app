@@ -2,6 +2,7 @@
 
 const activities = [
     {
+    "id": 1, 
     "activity": "Organize your dresser",
     "type": "busywork",
     "participants": 1,
@@ -12,6 +13,7 @@ const activities = [
 },
 
   {
+    "id": 2,
     "activity": "Explore a park you have never been to before",
     "type": "recreational",
     "participants": 1,
@@ -22,6 +24,7 @@ const activities = [
 },
 
     {
+        "id": 3,
         "activity": "Compliment someone",
         "type": "social",
         "participants": 2,
@@ -32,6 +35,7 @@ const activities = [
 },
 
     {
+        "id": 4,
         "activity": "Have a football scrimmage with some friends",
         "type": "social",
         "participants": 8,
@@ -40,5 +44,6 @@ const activities = [
         "key": "1638604",
         "accessibility": 0.2
 }]
-  
 
+
+export default activities

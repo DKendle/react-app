@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+//import { useState } from 'react'
 
 
 //PLAN:
@@ -13,7 +13,7 @@ import { useState } from 'react'
 
 export default function Form() {
     //create state for activity input
-    const [activity, setActivity] = useState([])
+    //const [activity, setActivity] = useState([])
 
 
     function handleSubmit(e){
@@ -28,11 +28,11 @@ export default function Form() {
 
     return (
         <div>
-            <form id='input-form' >
+            <form id='input-form' onClick={handleSubmit}>
             <input onChange={(e) => handleInput(e)} type='text' name='Activity' placeholder='Activity'/>
             <input onChange={(e) => handleInput(e)}type='text' name='Type' placeholder='Type'/>
 
-            <input onClick={handleSubmit} type='submit' name='Submit'/>
+            <input type='submit' name='Submit'/>
             </form>
         </div>
     )
