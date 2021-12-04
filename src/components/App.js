@@ -4,7 +4,8 @@ import Home from "./Home";
 import About from "./About";
 import Form from "./Form";
 
-
+//PLAN:
+//Act as the router for all components and provide links for them
 function App() {
 
   return (

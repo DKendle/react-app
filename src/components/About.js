@@ -1,5 +1,7 @@
 import React from 'react'
 
+//No State: Only displaying who/what we and our app is
+//PLAN:
 export default function About() {
     return (
         <div>

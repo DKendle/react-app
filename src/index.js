@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 
+//PLAN:
+//Renders main Component: App.js
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
