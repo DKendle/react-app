@@ -3,8 +3,8 @@ import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
 import Home from "./Home";
 import About from "./About";
 import Form from "./Form";
-import Activities from "./Activities";
 import activity from "../data/activity";
+import ActivityDisplay from "./ActivityDisplay";
 
 //PLAN:
 //Act as the router for all components and provide links for them
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path='/about' element={<About />} />
           <Route path='/form' element={<Form />} />
-          <Route path='/activities' element={<Activities activities={activity}/>} />
+          <Route path='/activities' element={<ActivityDisplay activities={activity}/>} />
           <Route path='/' element={<Home />} />
         </Routes>
       </BrowserRouter> 

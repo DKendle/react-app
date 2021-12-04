@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
+import Activity from './Activity'
 
-export default function Activities(props) {
-
+export default function ActivitiesDisplay(props) {
     const [act, setAct] = useState(props.activities)
+    //right now state is not needed, plans to handle new activities from form for setAct() fxn
 
     function handleClick(){
         const ranAct = act[Math.floor(Math.random() * act.length)]
@@ -12,9 +13,7 @@ export default function Activities(props) {
 
     return (
         <div>
-            <h1>Activities</h1>
-            
-            <button onClick={handleClick}>Random Activity</button>
+            <Activity click={handleClick}/>
         </div>
     )
 }
