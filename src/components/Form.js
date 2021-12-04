@@ -1,6 +1,10 @@
 import React from 'react'
+import { useState } from 'react'
 
 export default function Form() {
+    //create state for the name input
+    const [name, setName] = useState([])
+
 
     function handleSubmit(e){
         e.preventDefault()
@@ -16,7 +20,7 @@ export default function Form() {
         <div>
             <form id='input-form' >
             <input onChange={(e) => handleInput(e)} type='text' name='Title' placeholder='Title'/>
-            <input type='text' name='Category' placeholder='Category'/>
+            <input onChange={(e) => handleInput(e)}type='text' name='Category' placeholder='Category'/>
 
             <input onClick={handleSubmit} type='submit' name='Submit'/>
             </form>
