@@ -13,7 +13,7 @@ export default function ActivitiesDisplay(props) {
 
     return (
         <div>
-            <Activity click={handleClick}/>
+            <Activity click={handleClick} />
         </div>
     )
 }
