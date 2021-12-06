@@ -8,8 +8,7 @@ export default function ActivitiesDisplay(props) {
 
     useEffect(() => {
         fetch("http://localhost:3000/activities")
-        .then((r) => r.json())
-        .then((data) => console.log("hello"))
+        .then(console.log("FETCHED"))
         //return () => {
             //cleanup
         //}
